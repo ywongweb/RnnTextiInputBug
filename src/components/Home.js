@@ -1,5 +1,5 @@
 import React from 'react';
-import { TouchableOpacity, StyleSheet, View, Text, TextInput } from 'react-native'
+import { TouchableOpacity, StyleSheet, View, Text } from 'react-native'
 import Tabs from './Tabs'
 import NewTabs from './NewTab'
 
@@ -33,11 +33,10 @@ class Home extends React.Component {
   render() {
     return (
        <View style={styles.container}>
-         <TextInput style={styles.textInput} />
          <TouchableOpacity onPress={() => this.props.navigator.push({
            screen: 'Second'
          })}>
-           <Text style={styles.button}>Click Me</Text>
+           <Text style={styles.button}>Push new scene</Text>
          </TouchableOpacity>
 
          <Tabs />
