@@ -27,6 +27,7 @@ const styles = StyleSheet.create({
   },
   button: {
     fontSize: 30,
+    backgroundColor: 'orange'
   }
 })
 class Home extends React.Component {
